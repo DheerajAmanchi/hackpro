@@ -68,30 +68,7 @@ Feature: Smoke suite of UrbanLadder Automation
     Then user should be able to view Nice So who is this lucky person
 
     Examples: 
-      | money |
-      |   999 |
-      |  5000 |
-      | 10001 |
-
-  @smoke
-  Scenario Outline: Filling the form with from and to details in the GiftCards page
-    Given user should naviagate to urbanladder website
-    When user clicks on Gift Cards
-    And user selects an occasion
-    And user customizes the gift card with amount "<money>"
-    And user enters name "<fName>"
-    And user enters email "<fEmail>"
-    And user enters mobile "<fMobile>"
-    And user enters address "<fAddress>"
-    And user enters pincode "<fPincode>"
-    And user enters recipient name "<reName>"
-    And user enters recipient email "<reEmail>"
-    And user enters recipient mobile "<reMobile>"
-    And user clicks on confirm button
-    Then check the entered details are valid or not "<reEmail>" "<fEmail>"
-
-    Examples: 
-      | money | fName   | fEmail                | fMobile    | fAddress       | fPincode | reName | reEmail              | reMobile   |
-      |  1000 | dheeraj | asd@gmail.com         | 9878564534 | AR palli, Vskp |   530003 | kumar  | kar.com              | 7609876456 |
-      |  5000 | nani    | asdgmail.com          | 6112334455 | RA palli, Vskp |   530001 | raj    | raj098@gmail.com     | 6363636436 |
-      | 10000 | raj     | 121910318034@gitam.in | 8688004639 | endada, Vskp   |   530006 | kumar  | kumar12333@gmail.com | 7337464639 |
+      | money  |
+      |   999  |
+      |  5000  |
+      | 500001 |

@@ -42,6 +42,8 @@ public class baseClass {
 			case "edge":
 				capabilities.setBrowserName("MicrosoftEdge");
 				break;
+			case "firefox":
+				capabilities.setBrowserName("Firefox");
 			default:
 				System.out.println("No matching browser");
 			}
